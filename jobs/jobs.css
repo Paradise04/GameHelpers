@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins:wght@300&family=Ubuntu:ital,wght@1,300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+body{
+    background: rgba(0, 5, 20, 0.944);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
+
+
+.icon{
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(51, 111, 239);
+    margin-top: 20px;
+    margin-left: 20px;
+    transition: 0.5s ease;
+}
+
+.icon:hover{
+    color: blue;
+}
+
+
+
+
+
+.jobs-list-container{
+    max-width: 900px;
+    margin: 20px auto;
+
+
+}
+
+
+.jobs-list-container h2{
+    font-size: 30px;
+    border-left: 4px solid rgb(0, 26, 255);
+    padding-left: 20px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.jobs-list-container .jobs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+}
+
+.jobs-list-container img{
+    width: 60px;
+}
+
+
+.jobs-list-container .job{
+    box-shadow: 0 4px 24px -8px rgba(2, 48, 71, 0.2);
+    padding: 24px;
+    border-radius: 16px;
+    position: relative;
+    transition: all 400ms ease;
+    background-color: #e9e8eff7;
+    display: flex;
+    flex-direction: column;
+}   
+
+.jobs-list-container .job:hover{
+    transform: scale(1.03);
+}
+
+.jobs-list-container .open-positions{
+    position: absolute;
+    top: 40px;
+    right: 24px;
+    color: orange;
+}
+
+.jobs-list-container .job-title{
+    font-size: 20px;
+    padding: 10px 0;
+    margin: 0;
+    color: blue;
+
+}
+
+.jobs-list-container .details{
+    margin-top: 6px;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.8;
+    flex: 1;
+}
+
+.jobs-list-container .details-btn{
+    text-decoration: none;
+    border: 1px solid #023047;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+    transition: all 400ms ease;
+}
+
+
+.jobs-list-container .details-btn:hover{
+    background: #023047;
+    color: white;
+}
+
+
+@media (max-width: 940px){
+    .jobs-list-container .jobs{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 640px){
+    .jobs-list-container .jobs{
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}

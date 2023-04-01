@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+
+html {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.972), #07164a), url("");
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  overflow: hidden;
+}
+
+.wrapper{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin-top: 40px;
+}
+
+#icons{
+  color: rgb(18, 198, 198);
+  margin: 15px;
+  transition: 0.5s ease;
+
+}
+
+#icons:hover{
+  color: rgba(209, 17, 17, 0.916);
+}
+.icon{
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(51, 76, 239);
+    margin-top: 20px;
+    margin-left: 20px;
+    transition: 0.5s ease;
+    position: absolute;
+    left: 2%;
+    top: 5%;
+    
+}
+
+.icon:hover{
+    color: blue;
+}
+
+
+h1{
+  background: -webkit-linear-gradient( #5d00ff, #06c5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 90px;
+
+  
+}
+

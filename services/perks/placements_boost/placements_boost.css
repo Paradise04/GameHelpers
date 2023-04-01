@@ -1,0 +1,263 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.972), #041450), url("");
+    color: #fff;
+  }
+  
+  h2.main_head {
+    font-size: 60px;
+    text-align: center;
+    margin: 30px 0;
+    
+  }
+  
+  .container {
+    margin: 50px 0;
+  }
+  
+  /* Header Styles */
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  header h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  header select {
+    max-width: 100%;
+    width: 30%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #1f2833;
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+  
+  /* Options Styles */
+  
+  .options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 80px;
+  }
+  
+  label {
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #fff;
+  }
+  
+  .queue{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+  }
+  
+  select {
+    max-width: 100%;
+    width: 30%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #1f2833;
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+  
+  /* Slider Styles */
+  
+  .slide-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 80px;
+  }
+  
+  .slide-container label {
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #fff;
+  }
+  
+  .slider {
+    -webkit-appearance: none;
+    width: 80%;
+    height: 25px;
+    border-radius: 5px;
+    background-color: #1f2833;
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+  
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  #wins-value {
+    font-size: 40px;
+    margin-top: 20px;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  /* Card Styles */
+  
+  .card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #3f3f3f;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+  color: #fff;
+  margin-top: 30px;
+  }
+  
+  .card:hover {
+  transform: scale(1.1);
+  }
+  
+  .card:first-child {
+  background-color: #F76C6C;
+  }
+  
+  .card:nth-child(2) {
+  background-color: #F7D86C;
+  }
+  
+  .card:nth-child(3) {
+  background-color: #76F79C;
+  }
+  
+  .card:last-child {
+  background-color: #6C8DF7;
+  }
+  
+  
+  .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-top: 50px;
+  }
+  
+  
+  
+  /* Media Query */
+  
+  @media (max-width: 768px) {
+  .container {
+  margin: 30px 0;
+  }
+  
+  header h2 {
+  font-size: 20px;
+  }
+  
+  header select,
+  select {
+  max-width: 100%;
+  width: 70%;
+  font-size: 30px;
+  padding: 8px;
+  margin-bottom: 10px;
+  }
+  
+  .slide-container label {
+  font-size: 35px;
+  }
+  
+  .slider {
+  height: 20px;
+  }
+  
+  #wins-value {
+  font-size: 16px;
+  }
+  
+  .card {
+  width: 150px;
+  height: 150px;
+  font-size: 24px;
+  }
+  }
+  
+  
+  
+  .icon{
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(51, 111, 239);
+    transition: 0.5s ease;
+  
+  
+    }
+  
+    .icon:hover{
+        color: blue;
+    }

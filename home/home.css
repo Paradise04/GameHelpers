@@ -1,0 +1,263 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins:wght@300&family=Ubuntu:ital,wght@1,300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.972), #3b62ee), url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: transparent;
+    padding: 28px 12%;
+    transition: all .50s ease;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    border-radius: 50%;
+    width: 80px;
+
+}
+
+.logo span{
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 600;
+
+}
+
+
+
+.navbar{
+    display: flex;
+    
+
+}
+
+
+.navbar a{
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0px;
+    margin: 0px 30px;
+    transition: all .50s ease;
+
+}
+
+.navbar a:hover{
+    color: rgb(49, 49, 230);
+}
+
+.navbar a.active{
+    color: rgb(49, 49, 230);
+}
+
+.main{
+    display: flex;
+    align-items: center;
+
+}
+
+.main a{
+    margin-right: 25px;
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .50s ease;
+}
+
+.main a:hover{
+    color: rgb(49, 49, 230);
+}
+.user{
+    display: flex;
+    align-items: center;
+
+}
+
+.user i{
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    margin-right: 7px;
+
+}
+
+
+
+#menu-icon{
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+
+}
+
+@media (max-width: 1090px){
+    header{
+        padding: 14px 2%;
+        transition: .2s;
+
+    }
+
+    .navbar a{
+        padding: 5px 0px;
+        margin: 0px 20px;
+        
+    }
+}
+
+
+@media (max-width: 1090px){
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 270px;
+        height: 28vh;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s ease;  
+    }
+
+    .navbar a{
+        display: block;
+        margin: 9px 0px;
+        padding: 0px 25px;
+        transition: all .50s ease;
+        color: cyan;
+    }
+    .navbar a:hover{
+        color: red;
+
+    }
+
+    .navbar a.active{
+        color: red;
+        
+    }
+    .navbar.open{
+        right: 2%;
+    }
+}
+
+
+
+
+
+.main-container
+{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    background-image: linear-gradient(
+    -225deg,
+    #5333c7 0%,
+    #c0afd3 29%,
+    #c491a2 67%,
+    #ece871 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+    font-size: 45px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+  
+
+@media (max-width: 1090px){
+    .main-container{
+        font-size: 30px;
+    }
+}
+
+
+
+.container{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 15%);
+    width: 100%;
+    height: 100vh;
+    color: rgb(101, 225, 232);
+}
+
+.container h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

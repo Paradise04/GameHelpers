@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins:wght@300&family=Ubuntu:ital,wght@1,300&display=swap');
+
+/*
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body{
+    min-height: 100vh;
+    background-image: url("/images/e\ \(3\).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+.icon{
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(51, 111, 239);
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.icon:hover{
+    color: blue;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.wrapper h1{
+    color: white;
+    font-weight: 600;
+    font-size: 60px;
+}
+
+
+.wrapper a{
+    text-decoration: none;
+    font-size: 100px;
+    color: rgb(0, 255, 255);
+    display: flex;
+    margin-top: 50px;
+    flex-direction: row;
+}
+
+.wrapper a:hover{
+    color: blue;
+
+}
+
+
+
+*/
+
+
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --varyDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+    --weight1: 200;
+    --weight2: 400;
+    --weight3: 600;
+}
+
+body {
+    font-size: 15px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.93), #3b62ee), url("");
+    font-family: 'Poppins', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.icon{
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(51, 111, 239);
+    margin-top: 20px;
+    margin-left: 20px;
+    transition: 0.5s ease;
+}
+
+.icon:hover{
+    color: blue;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: white;
+    /*color: hsl(228, 45%, 44%); */
+}
+
+h1:first-of-type {
+    font-weight: var(--weight1);
+    color: white;
+    /*color: var(--varyDarkBlue);*/
+}
+
+h1:last-of-type {
+    color: white;
+    /*color: var(--varyDarkBlue);*/
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.header {
+    text-align: center;
+    line-height: 0.8;
+    margin-bottom: 50px;
+    margin-top: 0px;
+}
+
+.header p {
+    margin: 0 auto;
+    line-height: 2;
+    color: white;
+}
+
+
+.box p {
+    color: white;
+}
+
+.box {
+    border-radius: 5px;
+    /*box-shadow: 0px 30px 40px -20px var(--grayishBlue);*/
+    padding: 30px;
+    margin: 20px;  
+}
+
+img {
+    float: right;
+}
+
+@media (max-width: 450px) {
+    .box {
+        height: 200px;
+    }
+}
+
+@media (max-width: 950px) and (min-width: 450px) {
+    .box {
+        text-align: center;
+        height: 180px;
+    }
+}
+
+.cyan {
+    border: 3px solid var(--cyan);
+    transition: 0.75s ease;
+}
+.cyan:hover{
+    box-shadow: 0px 0px 80px rgb(112, 247, 247);
+}
+.red {
+    border: 3px solid var(--red);
+    transition: 0.75s ease;
+}
+.red:hover{
+    box-shadow: 0px 0px 80px rgb(249, 84, 112);
+}
+.blue {
+    border: 3px solid var(--blue);
+    transition: 0.75s ease;
+}
+.blue:hover{
+    box-shadow: 0px 0px 80px rgb(56, 79, 255);
+}
+.orange {
+    border: 3px solid var(--orange);
+    transition: 0.75s ease;
+}
+.orange:hover{
+    box-shadow: 0px 0px 80px rgb(244, 132, 139);
+}
+
+h2 {
+    color: white;
+    font-weight: var(--weight3);
+}
+
+
+@media (min-width: 950px) {
+    .row1-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .row2-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box-down {
+        position: relative;
+        top: 150px;
+    }
+    .box {
+        width: 20%;
+     
+    }
+    .header p {
+        width: 30%;
+    }
+    
+}

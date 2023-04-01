@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>GameHelpers | Seasonal Boost</title>
+      <link rel="stylesheet" href="/services/perks/seasonal_rewards/seasonal_rewards.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+      <link rel="icon" href="/images/logo.png" type="image/icon type">
+      <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">  
+    </head>
+    
+  </head>
+
+  <body>
+    <a class="icon" href="/services/perks/perks_rl.html"><i class='bx bx-arrow-back' style="font-size: 70px;"></i></a>
+
+    <h2 class="main_head">Seasonal Boost</h2>
+    <header>
+      <h2>Current League: </h2>
+      <select name="current-rank" id="current-rank">
+          <option value="Bronze I">Bronze I</option>
+          <option value="Bronze II">Bronze II</option>
+          <option value="Bronze III">Bronze III</option>
+          <option value="Silver I">Silver I</option>
+          <option value="Silver II">Silver II</option>
+          <option value="Silver III">Silver III</option>
+          <option value="Gold I">Gold I</option>
+          <option value="Gold II">Gold II</option>
+          <option value="Gold III">Gold III</option>
+          <option value="Platinum I">Platinum I</option>
+          <option value="Platinum II">Platinum II</option>
+          <option value="Platinum III">Platinum III</option>
+          <option value="Diamond I">Diamond I</option>
+          <option value="Diamond II">Diamond II</option>
+          <option value="Diamond III">Diamond III</option>
+          <option value="Champion I">Champion I</option>
+          <option value="Champion II">Champion II</option>
+          <option value="Champion III">Champion III</option>
+          <option value="Grand Champion I">Grand Champion I</option>
+          <option value="Grand Champion II">Grand Champion II</option>
+          <option value="Grand Champion III">Grand Champion III</option>
+          <option value="Super Sonic Legend">Super Sonic Legend</option>
+          </select>
+          </header>
+
+            <div class="options">
+                <label for="platform">Platform:</label>
+                <select name="platform" id="platform">
+                    <option value="PC">PC</option>
+                    <option value="PS4">PS4</option>
+                    <option value="Xbox">Xbox</option>
+                </select>
+                <div class="queue">
+                <label for="queue">Queue:</label>
+                <select name="queue" id="queue">
+                    <option value="1v1">1v1 (Solo Duels)</option>
+                    <option value="2v2">2v2 (Doubles)</option>
+                    <option value="3v3">3v3 (Standard)</option>
+                    <option value="Rumble">Rumble</option>
+                    <option value="Dropshop">Dropshot</option>
+                    <option value="Hoops">Hoops</option>
+                    <option value="Snowday">Snowday</option>
+                </select>
+                </div>
+            </div>
+            <div class="slide-container">
+            <label for="wins">Wins:</label>
+<input type="range" id="wins" name="wins" min="1" max="11" value="1" class="slider" oninput="updateWinsValue()">
+<span id="wins-value">1</span>
+              </div>
+<script>
+function updateWinsValue() {
+  var wins = document.getElementById("wins").value;
+  document.getElementById("wins-value").innerHTML = wins;
+}
+</script>
+
+
+          <div class="card-wrapper">
+            <div class="card">
+              <h1>Select Wins</h1>
+          </div>
+          </div> 
+
+            
+
+
+
+
+
+
+
+
+
+      <div class="button" id="paypal-payment-button"></div>
+  
+      <script src="https://www.paypal.com/sdk/js?client-id=Abxj4-ZfdWgYsfjcV2_LJvVWpjtgvQeFDkSXPIqaHkMieKnyOd4rSkCnAbRDFK7-T_98Ir7_HdvzWCj6&disable-funding=credit,card"></script>
+
+
+    <script src="/services/perks/seasonal_rewards/seasonal_rewards.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
