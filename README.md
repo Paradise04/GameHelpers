@@ -2,3 +2,6 @@ This website is not fully done, like 80%. You can copy and use the code just con
 
 
 If you need any changes i can do that as well.
+
+
+The website is not fully done because the client i did this for left in between.
